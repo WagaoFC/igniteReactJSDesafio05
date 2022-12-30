@@ -1,0 +1,2 @@
+import{A as t}from"./index-7cdfa749.js";import"./index-6c06fbd0.js";import"./es.object.get-own-property-descriptor-3a7d61f2.js";import"./index-adc65ea8.js";import"./jsx-runtime-c12679df.js";const c={title:"Data display/Avatar",component:t,args:{src:"https://github.com/wagaofc.png",alt:"Wagner Ferreira Costa"},argTypes:{src:{control:{type:"text"}}}},e={},p={args:{src:void 0}},m=["Primary","WithFallback"];export{e as Primary,p as WithFallback,m as __namedExportsOrder,c as default};
+//# sourceMappingURL=Avatar.stories-da2315dc.js.map

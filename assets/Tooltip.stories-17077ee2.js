@@ -1,0 +1,2 @@
+import{e as o,a as t}from"./index-7cdfa749.js";import{j as r}from"./jsx-runtime-c12679df.js";import"./index-6c06fbd0.js";import"./es.object.get-own-property-descriptor-3a7d61f2.js";import"./index-adc65ea8.js";const m={title:"Form/Tooltip",component:o,args:{children:r(t,{children:"Hover me"}),content:"This is a Tooltip"},argTypes:{children:{control:{type:null}}}},a={},l=["Primary"];export{a as Primary,l as __namedExportsOrder,m as default};
+//# sourceMappingURL=Tooltip.stories-17077ee2.js.map
