@@ -1,22 +1,33 @@
 import * as ToastPrimitive from '@radix-ui/react-toast'
+import { X } from 'phosphor-react'
 import { ComponentProps } from 'react'
+import {
+  ToastClose,
+  ToastDescription,
+  ToastRoot,
+  ToastTitle,
+  ToastViewport,
+} from './styles'
 
-export type ToastProps = ComponentProps<typeof ToastPrimitive.Root> & {
-    content: string
+export type ToastProps = ComponentProps<typeof ToastRoot> & {
+  title: string
+  description?: string
 }
 
-export function Toast({ content, children, ...props }: ToastProps) {
-    return (
-        <ToastPrimitive.Provider>
-            <ToastPrimitive.Root>
-                <ToastPrimitive.Title />
-                <ToastPrimitive.Description />
-                <ToastPrimitive.Close />
-            </ToastPrimitive.Root>
+export function Toast({ title, description, ...props }: ToastProps) {
+  return (
+    <ToastPrimitive.Provider>
+      <ToastRoot {...props}>
+        <ToastTitle>{title}</ToastTitle>
+        {description && <ToastDescription>{description}</ToastDescription>}
+        <ToastClose>
+          <X weight="light" size={20} />
+        </ToastClose>
+      </ToastRoot>
 
-            <ToastPrimitive.Viewport />
-        </ToastPrimitive.Provider>
-    )
+      <ToastViewport />
+    </ToastPrimitive.Provider>
+  )
 }
 
 Toast.displayName = 'Toast'
